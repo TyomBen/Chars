@@ -3,7 +3,11 @@
 void upper(char *arr)
 {
     while(*arr != 0){
-            printf("%c\n", *arr - 32);
+            if (*arr >= 97 && *arr <= 122){
+                     printf("%c\n", *arr - 32);
+               }else {
+                        printf("%c\n", *arr);         
+                    }
             ++arr;
         }
 }
